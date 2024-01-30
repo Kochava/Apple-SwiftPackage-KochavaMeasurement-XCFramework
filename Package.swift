@@ -28,15 +28,14 @@ let package = Package(
     dependencies:
     [
         // Dependencies declare other packages that this package depends on.
-        .package(
-            name: "KochavaNetworking",
-            path: "../Apple-SwiftPackage-KochavaNetworking-XCFramework"
-        ),
 //        .package(
 //            name: "KochavaNetworking",
-//            url: "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
-//            from: "8.0.0"
-//        ),
+//            path: "../Apple-SwiftPackage-KochavaNetworking-XCFramework"
+//        )
+        .package(
+            url: "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
+            from: "8.0.0-rc1"
+        )
     ],
     targets:
     [
@@ -50,7 +49,10 @@ let package = Package(
             name: "KochavaMeasurementTests",
             dependencies:
             [
-                "KochavaNetworking",
+                .product(
+                    name: "KochavaNetworking",
+                    package: "Apple-SwiftPackage-KochavaNetworking-XCFramework"
+                ),
                 "KochavaMeasurement"
             ]
         ),
