@@ -1,5 +1,7 @@
 # Apple-SwiftPackage-KochavaMeasurement-XCFramework
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKochava%2FApple-SwiftPackage-KochavaMeasurement-XCFramework%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Kochava/Apple-SwiftPackage-KochavaMeasurement-XCFramework)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKochava%2FApple-SwiftPackage-KochavaMeasurement-XCFramework%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Kochava/Apple-SwiftPackage-KochavaMeasurement-XCFramework)
 [![Releases](https://img.shields.io/github/v/release/kochava/Apple-SwiftPackage-KochavaMeasurement-XCFramework?include_prereleases&sort=semver)](https://github.com/Kochava/Apple-SwiftPackage-KochavaMeasurement-XCFramework/releases)
 
 ## KochavaMeasurement
