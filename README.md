@@ -38,7 +38,7 @@ In Xcode, see File > Swift Packages > Add Package Dependency ... > and enter the
 
 ## Documentation
 
-KochavaNetworking's Swift-DocC documentation is [available here](https://kochava.github.io/Apple-SwiftPackage-KochavaMeasurement/documentation/kochavameasurement).
+KochavaMeasurement's Swift-DocC documentation is [available here](https://kochava.github.io/Apple-SwiftPackage-KochavaMeasurement/documentation/kochavameasurement).
 
 ## Author
 
