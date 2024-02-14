@@ -1005,6 +1005,12 @@ extension KochavaMeasurement.Measurement {
     final public var hardwareMachineModelIdStringAdapter: KochavaNetworking.Adapter {
       get
     }
+    final public var iabGPPDictionaryAdapter: KochavaNetworking.Adapter {
+      get
+    }
+    final public var iabTCFDictionaryAdapter: KochavaNetworking.Adapter {
+      get
+    }
     final public var iabUSPrivacyStringAdapter: KochavaNetworking.Adapter {
       get
     }
