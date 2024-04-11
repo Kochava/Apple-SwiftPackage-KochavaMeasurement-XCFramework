@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaMeasurement-Swift.h</key>
 		<data>
-		nZF1VDP1DcHwJv1lthdmKsIVdsw=
+		GwEMNT2ylEyPRY6DHOmHOTZy/vU=
 		</data>
 		<key>Headers/KochavaMeasurement.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uD1KDw6Oq7VT5GaT2womY4kwiPc=
+		b8x5k6QCRbL2DkoKXpWfY1025bI=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		GgsSdtlxO6SEuejbB0qWRxMGq24=
+		uiJkIlMree2rIkEUH83WS54fSiA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		1c4hieBXx4q5Z1VovwH/VnT4q9o=
+		C+aS/UPiIdmq95hTQNcfk0pPkaU=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		EDFrBsSXF/bVVwBSl+a8vu5jYjM=
+		HAvyEoZdXqHR4kY/HYBGHYo+vGQ=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		1c4hieBXx4q5Z1VovwH/VnT4q9o=
+		C+aS/UPiIdmq95hTQNcfk0pPkaU=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		p8C5tTpoa5lPze4rc7OKlUDtADo=
+		aqkz/4a+C7XjcAXU6kq7CwlMrgQ=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		GgsSdtlxO6SEuejbB0qWRxMGq24=
+		uiJkIlMree2rIkEUH83WS54fSiA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		ju9J15OyIE4JpGZMYjWH90YRb+k=
+		/A7TmVxH/82c56yGoTQAcicVvNg=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		pceqVyzgTT/SjgNOI+ZTRZ/upoQ=
+		wMPCFgIB0VoJhpLOsx2O3qj+XOM=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		ju9J15OyIE4JpGZMYjWH90YRb+k=
+		/A7TmVxH/82c56yGoTQAcicVvNg=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		aQgtMyEyTm2uwAMDe5oAJMb6scQ=
+		KXBG0EtOtC/O5mbRRx4AVgb/2D0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pf9gkwvWIkXJUN3gemgv4NfRMKtkLPGm4PEH+c5nzSA=
+			OZr22jGRr8oyMbhU7veGLGymlv7ZbTope8S3ObtuxpY=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wXHIiAfIc0KRQxE+Wnn1EW8PPNNnMe7uA/2zNQF+To4=
+			ob8VCQCV/gom1NWMBj+3Inzh9EE9OVsGoppm9NacyoE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/+JK5l8a6lOcMjVmaGLZ3bE/3xBnzfjQ0Y7QrFdtco=
+			hWDrveKRuzWpE6G0zk8DN4MK/xdBi4PULYSmn2wZCDo=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X+2WiMURuk6u/Bfa58zduLkXxJHQAIZsN+Bc8KC6cNs=
+			jbObyCs9vU103tmwrlpbP6pn4r0MX3V86eJD9TUux0g=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/+JK5l8a6lOcMjVmaGLZ3bE/3xBnzfjQ0Y7QrFdtco=
+			hWDrveKRuzWpE6G0zk8DN4MK/xdBi4PULYSmn2wZCDo=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OY9Tpr8cIXdnwrmb+mEGDsDC+qftNn1ecAEgB6Ngedg=
+			9hPc+q5dzA4YHj/V+peLHUF0jo5B+J2i//xDmgS0jWw=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wXHIiAfIc0KRQxE+Wnn1EW8PPNNnMe7uA/2zNQF+To4=
+			ob8VCQCV/gom1NWMBj+3Inzh9EE9OVsGoppm9NacyoE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xd9DReA2oVD3aXjmwKJm0/4/uN6Kstcq3dF3ng5s5LE=
+			oejy38hjDgt9naquBSiUkZPrAZKqcmJT02oygXfLF0U=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gl4GQZ5zqMZooXCpDk7vTIheydnFyoOpBVrzi/OW3bI=
+			lxjNCZ3Jd5Kn1Er5WI/PUWXvyS5c+0vPSIJtfFU65CU=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xd9DReA2oVD3aXjmwKJm0/4/uN6Kstcq3dF3ng5s5LE=
+			oejy38hjDgt9naquBSiUkZPrAZKqcmJT02oygXfLF0U=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3f5a46ZcDbwQ65mHEgXz51P+WrPgbx8rQ4UH3ijGTSc=
+			+fBdSlYorwPmqUC1pxkTi6Mh5t4Sc8GmszWNuV97Ckg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

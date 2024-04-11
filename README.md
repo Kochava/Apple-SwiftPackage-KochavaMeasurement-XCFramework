@@ -13,7 +13,7 @@ The KochavaMeasurement framework is an SDK providing industry-leading install me
 
 ## Built on
 
-* Xcode 15.2
+* Xcode 15.3
 
 ## Platforms
 
@@ -22,7 +22,7 @@ The KochavaMeasurement framework is an SDK providing industry-leading install me
 * macOS 10.15
 * tvOS 13.0
 * visionOS 1.0
-* watchOS 6.0
+* watchOS 7.0
 
 ## Dependencies
 
