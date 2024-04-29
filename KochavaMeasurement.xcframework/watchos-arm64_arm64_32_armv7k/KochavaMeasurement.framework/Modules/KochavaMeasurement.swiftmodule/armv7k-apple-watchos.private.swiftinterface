@@ -306,7 +306,9 @@ extension KochavaMeasurement.Measurement {
   }
 }
 @_inheritsConvenienceInitializers @objc(KochavaMeasurement_Product) final public class Product : ObjectiveC.NSObject, KochavaNetworking.Logger_Provider, KochavaNetworking.SharedInstanceProvider {
-  @objc public static let shared: KochavaNetworking.Product
+  @objc public static var shared: KochavaNetworking.Product {
+    @objc get
+  }
   public static var sharedInstance: Any {
     get
   }

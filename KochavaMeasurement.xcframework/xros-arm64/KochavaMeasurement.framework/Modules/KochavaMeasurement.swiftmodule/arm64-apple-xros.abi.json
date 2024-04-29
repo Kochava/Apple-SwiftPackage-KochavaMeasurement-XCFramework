@@ -19108,15 +19108,11 @@
             "moduleName": "KochavaMeasurement",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "HasStorage",
               "AccessControl",
               "ObjC",
               "RawDocComment"
             ],
-            "isLet": true,
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -19135,7 +19131,6 @@
                 "mangledName": "$s18KochavaMeasurement7ProductC6shared0A10NetworkingABCvgZ",
                 "moduleName": "KochavaMeasurement",
                 "static": true,
-                "implicit": true,
                 "declAttributes": [
                   "Final",
                   "ObjC"
@@ -41233,1120 +41228,1120 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 4910,
+      "offset": 4769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 23553,
+      "offset": 23412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 35156,
+      "offset": 35015,
       "length": 32,
       "value": "\"KochavaMeasurement.Measurement\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 35681,
+      "offset": 35540,
       "length": 34,
       "value": "\"Measurement.executionTokenString\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 40745,
+      "offset": 40604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 41881,
+      "offset": 41740,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 43645,
+      "offset": 43504,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 43788,
+      "offset": 43647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 44340,
+      "offset": 44199,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 45429,
+      "offset": 45288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 45686,
+      "offset": 45545,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 45720,
+      "offset": 45579,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 45945,
+      "offset": 45804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "FloatLiteral",
-      "offset": 46332,
+      "offset": 46191,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 46374,
+      "offset": 46233,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 46426,
+      "offset": 46285,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 46658,
+      "offset": 46517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 46692,
+      "offset": 46551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 47109,
+      "offset": 46968,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "FloatLiteral",
-      "offset": 48249,
+      "offset": 48108,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 48468,
+      "offset": 48327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 48566,
+      "offset": 48425,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 48721,
+      "offset": 48580,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "FloatLiteral",
-      "offset": 48827,
+      "offset": 48686,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 49364,
+      "offset": 49223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 49371,
+      "offset": 49230,
       "length": 10,
       "value": "\"self nil\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 51521,
+      "offset": 51380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 51528,
+      "offset": 51387,
       "length": 10,
       "value": "\"self nil\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 52823,
+      "offset": 52682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 56910,
+      "offset": 56769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 57012,
+      "offset": 56871,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57064,
+      "offset": 56923,
       "length": 40,
       "value": "\"Measurement.Config.retrieveTransaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57206,
+      "offset": 57065,
       "length": 44,
       "value": "\"Measurement.Attribution.resultRetrieveTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57264,
+      "offset": 57123,
       "length": 30,
       "value": "\"Measurement.Updates.sendTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57308,
+      "offset": 57167,
       "length": 30,
       "value": "\"Measurement.Install.sendTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57352,
+      "offset": 57211,
       "length": 32,
       "value": "\"Networking.Config.retrieveTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57663,
+      "offset": 57522,
       "length": 16,
       "value": "\"baseIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57681,
+      "offset": 57540,
       "length": 39,
       "value": "\"Networking.Config.retrieveTransaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57742,
+      "offset": 57601,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57756,
+      "offset": 57615,
       "length": 40,
       "value": "\"Measurement.Config.retrieveTransaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57818,
+      "offset": 57677,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57875,
+      "offset": 57734,
       "length": 24,
       "value": "\"headerDictionaryFormat\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 57955,
+      "offset": 57814,
       "length": 14,
       "value": "\"adapterArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58071,
+      "offset": 57930,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58078,
+      "offset": 57937,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58124,
+      "offset": 57983,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58139,
+      "offset": 57998,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58263,
+      "offset": 58122,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58270,
+      "offset": 58129,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58322,
+      "offset": 58181,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58337,
+      "offset": 58196,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58461,
+      "offset": 58320,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58468,
+      "offset": 58327,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58518,
+      "offset": 58377,
       "length": 14,
       "value": "\"pathKeyArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "Array",
-      "offset": 58534,
+      "offset": 58393,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58574,
+      "offset": 58433,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58621,
+      "offset": 58480,
       "length": 59,
       "value": "\"Measurement.Datapoints.sdkGeneratedUserAgentStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58796,
+      "offset": 58655,
       "length": 22,
       "value": "\"bodyDictionaryFormat\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58874,
+      "offset": 58733,
       "length": 14,
       "value": "\"adapterArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 58990,
+      "offset": 58849,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59037,
+      "offset": 58896,
       "length": 31,
       "value": "\"Transaction.uuidStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59174,
+      "offset": 59033,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59197,
+      "offset": 59056,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59243,
+      "offset": 59102,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59258,
+      "offset": 59117,
       "length": 6,
       "value": "\"init\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59370,
+      "offset": 59229,
       "length": 21,
       "value": "\"universalIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59393,
+      "offset": 59252,
       "length": 14,
       "value": "\"sdk_protocol\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59445,
+      "offset": 59304,
       "length": 13,
       "value": "\"valueObject\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59460,
+      "offset": 59319,
       "length": 4,
       "value": "\"20\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59570,
+      "offset": 59429,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59617,
+      "offset": 59476,
       "length": 39,
       "value": "\"ProductController.productArrayAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59762,
+      "offset": 59621,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59809,
+      "offset": 59668,
       "length": 69,
       "value": "\"KochavaMeasurement.Product.capabilitiesBitwiseIntegersStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 59984,
+      "offset": 59843,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60031,
+      "offset": 59890,
       "length": 61,
       "value": "\"KochavaMeasurement.Product.standardVersionInfoStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60198,
+      "offset": 60057,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60245,
+      "offset": 60104,
       "length": 38,
       "value": "\"Networking.Config.tokenStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60389,
+      "offset": 60248,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60436,
+      "offset": 60295,
       "length": 46,
       "value": "\"KochavaMeasurement.Product.bundleTypeAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60588,
+      "offset": 60447,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60795,
+      "offset": 60654,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60842,
+      "offset": 60701,
       "length": 47,
       "value": "\"Measurement.General.sharedInstanceBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 60995,
+      "offset": 60854,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61042,
+      "offset": 60901,
       "length": 46,
       "value": "\"Measurement.General.storageIdentifierAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61194,
+      "offset": 61053,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61396,
+      "offset": 61255,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61443,
+      "offset": 61302,
       "length": 49,
       "value": "\"Measurement.InstallIdentifier.identifierAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61598,
+      "offset": 61457,
       "length": 14,
       "value": "\"pathKeyArray\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "Array",
-      "offset": 61614,
+      "offset": 61473,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61654,
+      "offset": 61513,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61701,
+      "offset": 61560,
       "length": 46,
       "value": "\"Networking.Datapoints.ipAddressStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61853,
+      "offset": 61712,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61900,
+      "offset": 61759,
       "length": 59,
       "value": "\"Measurement.Sessions.currentSessionStateActiveBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 61997,
+      "offset": 61856,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 62031,
+      "offset": 61890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62141,
+      "offset": 62000,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62188,
+      "offset": 62047,
       "length": 32,
       "value": "\"System.appExtensionBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62326,
+      "offset": 62185,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62532,
+      "offset": 62391,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62579,
+      "offset": 62438,
       "length": 49,
       "value": "\"Networking.Datapoints.platformNameStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62734,
+      "offset": 62593,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 62866,
+      "offset": 62725,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 62900,
+      "offset": 62759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63010,
+      "offset": 62869,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63057,
+      "offset": 62916,
       "length": 42,
       "value": "\"Networking.Datapoints.currentDateAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63137,
+      "offset": 62996,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 63171,
+      "offset": 63030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63281,
+      "offset": 63140,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63328,
+      "offset": 63187,
       "length": 47,
       "value": "\"Networking.Datapoints.systemNameStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63481,
+      "offset": 63340,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63528,
+      "offset": 63387,
       "length": 58,
       "value": "\"Measurement.Sessions.currentSessionUpTimeIntervalAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63624,
+      "offset": 63483,
       "length": 32,
       "value": "\"collectValueSourceUpdatingBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 63658,
+      "offset": 63517,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63768,
+      "offset": 63627,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63815,
+      "offset": 63674,
       "length": 60,
       "value": "\"Networking.Datapoints.appMainBundleIdentifierStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 63981,
+      "offset": 63840,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64028,
+      "offset": 63887,
       "length": 53,
       "value": "\"Networking.Datapoints.minimumOSVersionStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64187,
+      "offset": 64046,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64234,
+      "offset": 64093,
       "length": 43,
       "value": "\"Measurement.Install.lastDictionaryAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64383,
+      "offset": 64242,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64430,
+      "offset": 64289,
       "length": 30,
       "value": "\"Transaction.urlStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64566,
+      "offset": 64425,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64613,
+      "offset": 64472,
       "length": 46,
       "value": "\"Networking.Datapoints.osVersionStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64765,
+      "offset": 64624,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64812,
+      "offset": 64671,
       "length": 60,
       "value": "\"Measurement.Datapoints.hardwareMachineModelIdStringAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 64978,
+      "offset": 64837,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65025,
+      "offset": 64884,
       "length": 53,
       "value": "\"Measurement.Deeplinks.augmentationDictionaryAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65184,
+      "offset": 65043,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65231,
+      "offset": 65090,
       "length": 46,
       "value": "\"Networking.Datapoints.macCatalystBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65383,
+      "offset": 65242,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65430,
+      "offset": 65289,
       "length": 44,
       "value": "\"Networking.Datapoints.simulatorBoolAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65580,
+      "offset": 65439,
       "length": 45,
       "value": "\"baseIdentifier+collectValueSourceIdentifier\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 65627,
+      "offset": 65486,
       "length": 28,
       "value": "\"Transaction.consentAdapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 65953,
+      "offset": 65812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 67471,
+      "offset": 67330,
       "length": 12,
       "value": "\"sdk_timing\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 67531,
+      "offset": 67390,
       "length": 37,
       "value": "\"Measurement.Install.sendTransaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 67664,
+      "offset": 67523,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 67731,
+      "offset": 67590,
       "length": 12,
       "value": "\"sdk_timing\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 67864,
+      "offset": 67723,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68030,
+      "offset": 67889,
       "length": 47,
       "value": "\"Transaction.Payload.transform_didCompleteTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68107,
+      "offset": 67966,
       "length": 59,
       "value": "\"Measurement.Transaction.Payload.transform_didCompleteTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "Dictionary",
-      "offset": 68270,
+      "offset": 68129,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68305,
+      "offset": 68164,
       "length": 13,
       "value": "\"transaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68365,
+      "offset": 68224,
       "length": 8,
       "value": "\"object\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68472,
+      "offset": 68331,
       "length": 33,
       "value": "\"additionalHeadersDictionaryBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68787,
+      "offset": 68646,
       "length": 11,
       "value": "\"send_date\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68866,
+      "offset": 68725,
       "length": 11,
       "value": "\"send_date\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 68917,
+      "offset": 68776,
       "length": 11,
       "value": "\"send_date\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 70901,
+      "offset": 70760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 74899,
+      "offset": 74758,
       "length": 21,
       "value": "\"Measurement.adapter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 74951,
+      "offset": 74810,
       "length": 13,
       "value": "\"measurement\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 75071,
+      "offset": 74930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 75250,
+      "offset": 75109,
       "length": 28,
       "value": "\"com.kochava.KochavaTracker\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "StringLiteral",
-      "offset": 75308,
+      "offset": 75167,
       "length": 9,
       "value": "\"Tracker\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 75386,
+      "offset": 75245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "FloatLiteral",
-      "offset": 75431,
+      "offset": 75290,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 75489,
+      "offset": 75348,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "Array",
-      "offset": 76808,
+      "offset": 76667,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 79729,
+      "offset": 79588,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Measurement.swift",
       "kind": "BooleanLiteral",
-      "offset": 82201,
+      "offset": 82060,
       "length": 4,
       "value": "true"
     },
@@ -43382,329 +43377,70 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
-      "length": 13,
-      "value": "\"Measurement\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2039,
-      "length": 9,
-      "value": "\"Kochava\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2077,
-      "length": 32,
-      "value": "\"com.kochava.KochavaMeasurement\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2132,
-      "length": 19,
-      "value": "\"Apple.Measurement\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2176,
-      "length": 7,
-      "value": "\"8.1.1\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2211,
-      "length": 3,
-      "value": "\"8\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 2348,
-      "length": 20,
-      "value": "\"KVABuildDateString\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "Array",
-      "offset": 2469,
-      "length": 52,
-      "value": "[0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23]"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4633,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4824,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5043,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5300,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5528,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5998,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6188,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 6466,
-      "length": 48,
-      "value": "\"capabilityAppTrackingTransparencySupportedBool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 6588,
-      "length": 20,
-      "value": "\"capabilityIDCTBool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 6694,
-      "length": 32,
-      "value": "\"capabilityScreenAttributesBool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 6808,
-      "length": 28,
-      "value": "\"capabilitySKAdNetwork4Bool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 6922,
-      "length": 32,
-      "value": "\"capabilityWebViewUserAgentBool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7444,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7588,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7626,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7702,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "Dictionary",
-      "offset": 7933,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 8053,
-      "length": 36,
-      "value": "\"didInvalidateSharedMeasurementBool\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8093,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8513,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 8958,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9142,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 9443,
-      "length": 19,
-      "value": "\"IABGPP_2_TCString\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 9630,
-      "length": 27,
-      "value": "\"IABGPP_TCFEU2_gdprApplies\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 9819,
-      "length": 17,
-      "value": "\"IABTCF_TCString\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 10004,
-      "length": 20,
-      "value": "\"IABTCF_gdprApplies\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 10194,
-      "length": 21,
-      "value": "\"IABUSPrivacy_String\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "Array",
-      "offset": 10335,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "Dictionary",
-      "offset": 10949,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 10987,
-      "length": 36,
-      "value": "\"standard.didDeleteVariableKeyArray\""
-    },
-    {
-      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
-      "kind": "StringLiteral",
-      "offset": 11571,
+      "offset": 14507,
       "length": 28,
       "value": "\"KochavaMeasurement.Product\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 11826,
+      "offset": 14843,
+      "length": 42,
+      "value": "\"Measurement.Product.executionTokenString\""
+    },
+    {
+      "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
+      "kind": "StringLiteral",
+      "offset": 15123,
       "length": 48,
       "value": "\"KochavaMeasurement.Product.wrapperShutdownTask\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 11905,
+      "offset": 15202,
       "length": 18,
       "value": "\"wrapper_shutdown\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 11957,
+      "offset": 15254,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 12216,
+      "offset": 15513,
       "length": 16,
       "value": "\"task.parameter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 12324,
+      "offset": 15621,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 12448,
+      "offset": 15745,
       "length": 12,
       "value": "\"deleteData\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "StringLiteral",
-      "offset": 12497,
+      "offset": 15794,
       "length": 16,
       "value": "\"task.parameter\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaMeasurement\/Sources\/KochavaMeasurement\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 12605,
+      "offset": 15902,
       "length": 4,
       "value": "true"
     },
@@ -44173,35 +43909,35 @@
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaEnhancement\/Sources\/KochavaEnhancement\/TransactionEnhancer.swift",
       "kind": "StringLiteral",
-      "offset": 7510,
+      "offset": 7590,
       "length": 13,
       "value": "\"transaction\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaEnhancement\/Sources\/KochavaEnhancement\/TransactionEnhancer.swift",
       "kind": "StringLiteral",
-      "offset": 7597,
+      "offset": 7677,
       "length": 8,
       "value": "\"object\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaEnhancement\/Sources\/KochavaEnhancement\/TransactionEnhancer.swift",
       "kind": "StringLiteral",
-      "offset": 7708,
+      "offset": 7788,
       "length": 33,
       "value": "\"additionalHeadersDictionaryBool\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaEnhancement\/Sources\/KochavaEnhancement\/TransactionEnhancer.swift",
       "kind": "StringLiteral",
-      "offset": 8041,
+      "offset": 7967,
       "length": 11,
       "value": "\"send_date\""
     },
     {
       "filePath": "\/Users\/johnbushnell\/Code\/Kochava\/Apple-SwiftPackage-KochavaEnhancement\/Sources\/KochavaEnhancement\/TransactionEnhancer.swift",
       "kind": "StringLiteral",
-      "offset": 8095,
+      "offset": 8032,
       "length": 11,
       "value": "\"send_date\""
     },
