@@ -95,7 +95,36 @@ extension KochavaMeasurement.Measurement.Attribution {
     @objc deinit
   }
 }
-@_hasMissingDesignatedInitializers @objc(KVAMeasurement) final public class Measurement : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.ConfigurableWithWithOptions, KochavaMeasurement.CustomIdentifier_RegistrarProvider, KochavaMeasurement.CustomValue_RegistrarProvider, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink_ProcessorProvider, KochavaNetworking.EncodableTo, KochavaMeasurement.Event_DefaultParameter_RegistrarProvider, KochavaMeasurement.Event_SenderProvider, KochavaNetworking.Executor, KochavaMeasurement.IdentityLink_RegistrarProvider, KochavaNetworking.Invalidatable, KochavaNetworking.InvalidatableWithOptions, KochavaNetworking.Logger_Provider, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_AugmenterProvider, KochavaNetworking.Networking_RequiredProvider, KochavaNetworking.PrivacyProfile_RegistrarProvider, KochavaMeasurement.PushNotificationsToken_RegistrarProvider, KochavaNetworking.SharedInstanceProvider, KochavaNetworking.Startable, KochavaNetworking.StartableWithOptions, KochavaNetworking.Stoppable, KochavaNetworking.StoppableWithOptions {
+extension KochavaMeasurement.Deeplink {
+  @_hasMissingDesignatedInitializers @objc(KVADeeplink_Wrapper) final public class Wrapper : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, KochavaNetworking.Logger_Provider, KochavaNetworking.Networking_Provider, KochavaNetworking.Registerable {
+    @objc(registerWithDomain:) public static func register(domain: KochavaMeasurement.Deeplink.Wrapper.Domain)
+    public static func register(domain: KochavaMeasurement.Deeplink.Wrapper.Domain, unwrapBool: Swift.Bool?)
+    @objc(registerWithDomain:registrarArray:) public static func register(domain: KochavaMeasurement.Deeplink.Wrapper.Domain, registrarArray: [any KochavaMeasurement.Deeplink_Wrapper_RegistrarProvider]?)
+    public static func register(domain: KochavaMeasurement.Deeplink.Wrapper.Domain, unwrapBool: Swift.Bool?, registrarArray: [any KochavaMeasurement.Deeplink_Wrapper_RegistrarProvider]?)
+    public static func from(_ object: Any?) -> Self?
+    final public func to(context: KochavaNetworking.Context?) -> Any?
+    @discardableResult
+    final public func register() -> KochavaNetworking.Collection.RegisterResult?
+    final public func execute()
+    public static let type_kochava: KochavaNetworking.Kochava_Type
+    final public var execution: KochavaNetworking.Execution {
+      get
+    }
+    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
+    public static let logger: os.Logger
+    @objc final public let domain: KochavaMeasurement.Deeplink.Wrapper.Domain
+    public typealias Domain = Swift.String
+    @objc final public var networking: KochavaNetworking.Networking?
+    @objc deinit
+  }
+}
+@objc(KVADeeplink_Wrapper_Registrar) public protocol Deeplink_Wrapper_Registrar {
+  @objc(register:) func register(_ wrapper: KochavaMeasurement.Deeplink.Wrapper)
+}
+@objc(KVADeeplink_Wrapper_RegistrarProvider) public protocol Deeplink_Wrapper_RegistrarProvider {
+  @objc var deeplink_wrapper_registrar: any KochavaMeasurement.Deeplink_Wrapper_Registrar { get }
+}
+@_hasMissingDesignatedInitializers @objc(KVAMeasurement) final public class Measurement : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.ConfigurableWithWithOptions, KochavaMeasurement.CustomIdentifier_RegistrarProvider, KochavaMeasurement.CustomValue_RegistrarProvider, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink_ProcessorProvider, KochavaMeasurement.Deeplink_Wrapper_RegistrarProvider, KochavaNetworking.EncodableTo, KochavaMeasurement.Event_DefaultParameter_RegistrarProvider, KochavaMeasurement.Event_SenderProvider, KochavaNetworking.Executor, KochavaMeasurement.IdentityLink_RegistrarProvider, KochavaNetworking.Invalidatable, KochavaNetworking.InvalidatableWithOptions, KochavaNetworking.Logger_Provider, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_AugmenterProvider, KochavaNetworking.Networking_RequiredProvider, KochavaNetworking.PrivacyProfile_RegistrarProvider, KochavaMeasurement.PushNotificationsToken_RegistrarProvider, KochavaNetworking.SharedInstanceProvider, KochavaNetworking.Startable, KochavaNetworking.StartableWithOptions, KochavaNetworking.Stoppable, KochavaNetworking.StoppableWithOptions {
   @objc public static var shared: KochavaMeasurement.Measurement {
     @objc get
   }
@@ -198,6 +227,9 @@ extension KochavaMeasurement.Measurement.Attribution {
     @objc get
   }
   @objc final public var deeplink_processor: (any KochavaMeasurement.Deeplink_Processor)? {
+    @objc get
+  }
+  @objc final public var deeplink_wrapper_registrar: any KochavaMeasurement.Deeplink_Wrapper_Registrar {
     @objc get
   }
   @objc final public var event_defaultParameter_registrar: any KochavaMeasurement.Event_DefaultParameter_Registrar {
@@ -423,7 +455,7 @@ public var shared: KochavaNetworking.Product {
   get
 }
 extension KochavaMeasurement.Measurement {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Deeplinks) final public class Deeplinks : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink_Processor, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, KochavaNetworking.Logger_Provider, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_Augmenter, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_AugmenterProvider, KochavaNetworking.Networking_Provider {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Deeplinks) final public class Deeplinks : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink_Processor, KochavaMeasurement.Deeplink_Wrapper_Registrar, KochavaMeasurement.Deeplink_Wrapper_RegistrarProvider, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, KochavaNetworking.Logger_Provider, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_Augmenter, KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_AugmenterProvider, KochavaNetworking.Networking_Provider {
     @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
     public static func from(_ object: Any?) -> Self?
     @discardableResult
@@ -437,6 +469,10 @@ extension KochavaMeasurement.Measurement {
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
+    }
+    @objc(register:) final public func register(_ wrapper: KochavaMeasurement.Deeplink.Wrapper)
+    @objc final public var deeplink_wrapper_registrar: any KochavaMeasurement.Deeplink_Wrapper_Registrar {
+      @objc get
     }
     @objc final public func augment(_ deferredPrefetch: KochavaMeasurement.Deeplink.DeferredPrefetch)
     @objc final public var deeplinks_deferredPrefetch_augmenter: any KochavaMeasurement.Measurement_Deeplinks_DeferredPrefetch_Augmenter {
@@ -925,10 +961,14 @@ extension KochavaMeasurement.Measurement {
   @objc final public var urlString: Swift.String?
   @objc final public var networking: KochavaNetworking.Networking?
   @objc final public var destinationString: Swift.String?
+  @objc final public var pathURLString: Swift.String? {
+    @objc get
+  }
   @objc final public var rawDictionary: [Swift.AnyHashable : Any]? {
     @objc get
     @objc set(rawDictionary)
   }
+  @objc final public var unwrappedURLString: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
