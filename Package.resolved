@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
       "state" : {
-        "revision" : "6f21f9fe344d5df9671d39ad6d86e1492ba7615c",
-        "version" : "8.2.0"
+        "revision" : "9f728ae3f83bbc0f0ff4e81ecd1e853196c47db7",
+        "version" : "8.3.0"
       }
     }
   ],
