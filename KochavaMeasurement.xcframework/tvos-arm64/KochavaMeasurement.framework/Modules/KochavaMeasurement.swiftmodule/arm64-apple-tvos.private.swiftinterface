@@ -104,12 +104,12 @@ extension KochavaMeasurement.Deeplink {
     @discardableResult
     final public func register() -> KochavaNetworking.Collection.RegisterResult?
     final public func execute()
+    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
+    public static let logger: os.Logger
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
     }
-    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
-    public static let logger: os.Logger
     @objc final public let domain: KochavaMeasurement.Deeplink.Wrapper.Domain
     public typealias Domain = Swift.String
     @objc final public var networking: KochavaNetworking.Networking?
@@ -603,12 +603,12 @@ extension KochavaMeasurement.Event {
     @discardableResult
     final public func register() -> KochavaNetworking.Collection.RegisterResult?
     final public func execute()
+    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
+    public static let logger: os.Logger
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
     }
-    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
-    public static let logger: os.Logger
     @objc final public let name: KochavaMeasurement.Event.DefaultParameter.Name
     public typealias Name = Swift.String
     public typealias Value = Any
@@ -1099,14 +1099,14 @@ extension KochavaMeasurement.Deeplink {
     @discardableResult
     final public func register() -> KochavaNetworking.Collection.RegisterResult?
     final public func execute()
+    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
+    public static let logger: os.Logger
     public static let type_kochava: KochavaNetworking.Kochava_Type
     @discardableResult
     final public func augment() -> KochavaNetworking.Collection.RegisterResult?
     final public var execution: KochavaNetworking.Execution {
       get
     }
-    @available(iOS 14.0, iOSApplicationExtension 14.0, macOS 11.0, tvOS 14.0, tvOSApplicationExtension 14.0, visionOS 1.0, watchOS 7.0, *)
-    public static let logger: os.Logger
     @objc final public let name: KochavaMeasurement.Deeplink.DeferredPrefetch.Name
     public typealias Name = Swift.String
     @objc final public let identifier: KochavaMeasurement.Deeplink.DeferredPrefetch.Identifier?

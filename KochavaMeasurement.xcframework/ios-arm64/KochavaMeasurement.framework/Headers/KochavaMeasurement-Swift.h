@@ -399,10 +399,6 @@ SWIFT_CLASS_NAMED("Result")
 @interface KVAMeasurement_AdNetwork_Conversion (SWIFT_EXTENSION(KochavaMeasurement))
 @end
 
-
-@interface KVAMeasurement_AdNetwork_Conversion (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
 @class NSString;
 @class NSNumber;
 
@@ -425,6 +421,10 @@ SWIFT_CLASS_NAMED("Result")
 /// This is a raw value which has not had any translations applied yet.  This also does not include any extension interval value (extensionIntervalTranslatedValueInt).
 @property (nonatomic, strong) NSNumber * _Nullable rawValueNumber;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface KVAMeasurement_AdNetwork_Conversion (SWIFT_EXTENSION(KochavaMeasurement))
 @end
 
 @protocol KVACustomIdentifier_RegistrarProvider;
@@ -1391,55 +1391,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable sha
 @end
 
 
-/// A feature which tracks user behavior and actions beyond the install.
-SWIFT_CLASS_NAMED("Events")
-@interface KVAMeasurement_Events : NSObject <KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider, KVAEvent_Sender>
+/// A feature which is responsible for a collection of datapoints.
+SWIFT_CLASS_NAMED("Datapoints")
+@interface KVAMeasurement_Datapoints : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)sendEvent:(KVAEvent * _Nonnull)event;
-/// Register a default parameter.
-/// See class Event.<code>Event/DefaultParameter</code>.
-/// \param defaultParameter The default parameter.
-///
-- (void)register:(KVAEvent_DefaultParameter * _Nonnull)defaultParameter;
-@property (nonatomic, readonly, strong) id <KVAEvent_DefaultParameter_Registrar> _Nonnull event_defaultParameter_registrar;
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
-/// A feature which is responsible for custom identifiers.
-SWIFT_CLASS_NAMED("CustomIdentifiers")
-@interface KVAMeasurement_CustomIdentifiers : NSObject <NSCopying, KVACustomIdentifier_Registrar, KVACustomIdentifier_RegistrarProvider, KVANetworking_Provider>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-/// Register a custom identifier.
-/// See class <code>CustomIdentifier</code>.
-/// In order to send a custom identifier it must be allowed on your account.
-/// \param customIdentifier The custom identifier.
-///
-- (void)register:(KVACustomIdentifier * _Nonnull)customIdentifier;
-@property (nonatomic, readonly, strong) id <KVACustomIdentifier_Registrar> _Nonnull customIdentifier_registrar;
-/// An instance of networking.
-@property (nonatomic, strong) KVANetworking * _Nullable networking;
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
-/// A feature which is responsible for linking identities.
-SWIFT_CLASS_NAMED("IdentityLinking")
-@interface KVAMeasurement_IdentityLinking : NSObject <KVAIdentityLink_Registrar, KVAIdentityLink_RegistrarProvider>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-/// Register an identity link.
-/// See class <code>IdentityLink</code>.
-/// \param identityLink The identity link.
-///
-- (void)register:(KVAIdentityLink * _Nonnull)identityLink;
-@property (nonatomic, readonly, strong) id <KVAIdentityLink_Registrar> _Nonnull identityLink_registrar;
 @end
 
 
@@ -1463,18 +1418,53 @@ SWIFT_CLASS_NAMED("General")
 @end
 
 
-/// A feature which provides information about the install.
-SWIFT_CLASS_NAMED("Install")
-@interface KVAMeasurement_Install : NSObject
-/// The date that the install did start first.
-/// This will be nil until the first time that the start function for the measurement instance has executed.
-@property (nonatomic, readonly, copy) NSDate * _Nullable didStartFirstDate;
+/// A feature which tracks user behavior and actions beyond the install.
+SWIFT_CLASS_NAMED("Events")
+@interface KVAMeasurement_Events : NSObject <KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider, KVAEvent_Sender>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)sendEvent:(KVAEvent * _Nonnull)event;
+/// Register a default parameter.
+/// See class Event.<code>Event/DefaultParameter</code>.
+/// \param defaultParameter The default parameter.
+///
+- (void)register:(KVAEvent_DefaultParameter * _Nonnull)defaultParameter;
+@property (nonatomic, readonly, strong) id <KVAEvent_DefaultParameter_Registrar> _Nonnull event_defaultParameter_registrar;
+@end
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+@class KVAPushNotificationsToken;
+
+SWIFT_PROTOCOL_NAMED("PushNotificationsToken_Registrar")
+@protocol KVAPushNotificationsToken_Registrar
+- (void)registerToken:(KVAPushNotificationsToken * _Nonnull)token;
+@end
+
+
+/// A feature which provides for the measurement of push notifications.
+SWIFT_CLASS_NAMED("PushNotifications")
+@interface KVAMeasurement_PushNotifications : NSObject <KVAPushNotificationsToken_Registrar>
+- (void)registerToken:(KVAPushNotificationsToken * _Nonnull)token;
+/// A boolean indicating if push notifications is enabled.
+@property (nonatomic) BOOL enabledBool;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
 @end
+
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
 
 
 @interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
@@ -1533,56 +1523,6 @@ SWIFT_CLASS_NAMED("Deeplinks")
 @end
 
 
-/// A feature which is responsible for custom values.
-SWIFT_CLASS_NAMED("CustomValues")
-@interface KVAMeasurement_CustomValues : NSObject <NSCopying, KVACustomValue_Registrar, KVACustomValue_RegistrarProvider, KVANetworking_Provider>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-/// Register a custom value.
-/// See class <code>CustomValue</code>.
-/// \param customValue The custom value.
-///
-- (void)register:(KVACustomValue * _Nonnull)customValue;
-@property (nonatomic, readonly, strong) id <KVACustomValue_Registrar> _Nonnull customValue_registrar;
-/// An instance of networking.
-@property (nonatomic, strong) KVANetworking * _Nullable networking;
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-@class KVAPushNotificationsToken;
-
-SWIFT_PROTOCOL_NAMED("PushNotificationsToken_Registrar")
-@protocol KVAPushNotificationsToken_Registrar
-- (void)registerToken:(KVAPushNotificationsToken * _Nonnull)token;
-@end
-
-
-/// A feature which provides for the measurement of push notifications.
-SWIFT_CLASS_NAMED("PushNotifications")
-@interface KVAMeasurement_PushNotifications : NSObject <KVAPushNotificationsToken_Registrar>
-- (void)registerToken:(KVAPushNotificationsToken * _Nonnull)token;
-/// A boolean indicating if push notifications is enabled.
-@property (nonatomic) BOOL enabledBool;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
 /// A feature which is responsible for the identification of an install.
 SWIFT_CLASS_NAMED("InstallIdentifier")
 @interface KVAMeasurement_InstallIdentifier : NSObject
@@ -1605,9 +1545,50 @@ SWIFT_CLASS_NAMED("InstallIdentifier")
 @end
 
 
-/// A feature which is responsible for a collection of datapoints.
-SWIFT_CLASS_NAMED("Datapoints")
-@interface KVAMeasurement_Datapoints : NSObject
+/// A feature which is responsible for custom identifiers.
+SWIFT_CLASS_NAMED("CustomIdentifiers")
+@interface KVAMeasurement_CustomIdentifiers : NSObject <NSCopying, KVACustomIdentifier_Registrar, KVACustomIdentifier_RegistrarProvider, KVANetworking_Provider>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+/// Register a custom identifier.
+/// See class <code>CustomIdentifier</code>.
+/// In order to send a custom identifier it must be allowed on your account.
+/// \param customIdentifier The custom identifier.
+///
+- (void)register:(KVACustomIdentifier * _Nonnull)customIdentifier;
+@property (nonatomic, readonly, strong) id <KVACustomIdentifier_Registrar> _Nonnull customIdentifier_registrar;
+/// An instance of networking.
+@property (nonatomic, strong) KVANetworking * _Nullable networking;
+@end
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+
+/// A feature which is responsible for linking identities.
+SWIFT_CLASS_NAMED("IdentityLinking")
+@interface KVAMeasurement_IdentityLinking : NSObject <KVAIdentityLink_Registrar, KVAIdentityLink_RegistrarProvider>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Register an identity link.
+/// See class <code>IdentityLink</code>.
+/// \param identityLink The identity link.
+///
+- (void)register:(KVAIdentityLink * _Nonnull)identityLink;
+@property (nonatomic, readonly, strong) id <KVAIdentityLink_Registrar> _Nonnull identityLink_registrar;
+@end
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+
+/// A feature which provides information about the install.
+SWIFT_CLASS_NAMED("Install")
+@interface KVAMeasurement_Install : NSObject
+/// The date that the install did start first.
+/// This will be nil until the first time that the start function for the measurement instance has executed.
+@property (nonatomic, readonly, copy) NSDate * _Nullable didStartFirstDate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1615,6 +1596,25 @@ SWIFT_CLASS_NAMED("Datapoints")
 @interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
 @end
 
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+
+/// A feature which is responsible for custom values.
+SWIFT_CLASS_NAMED("CustomValues")
+@interface KVAMeasurement_CustomValues : NSObject <NSCopying, KVACustomValue_Registrar, KVACustomValue_RegistrarProvider, KVANetworking_Provider>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+/// Register a custom value.
+/// See class <code>CustomValue</code>.
+/// \param customValue The custom value.
+///
+- (void)register:(KVACustomValue * _Nonnull)customValue;
+@property (nonatomic, readonly, strong) id <KVACustomValue_Registrar> _Nonnull customValue_registrar;
+/// An instance of networking.
+@property (nonatomic, strong) KVANetworking * _Nullable networking;
+@end
 
 
 /// A feature which interfaces with Apple’s App Tracking Transparency system.
@@ -1641,6 +1641,7 @@ SWIFT_CLASS_NAMED("Measurement_AppTrackingTransparency")
 /// This is optional and will be nil until a status is known.  For this reason this can be checked as a means of determining if a status has been determined.  Current possible values:  “authorized”, “denied”, “notDetermined”, “restricted”, “unknown”.
 @property (nonatomic, readonly, copy) NSString * _Nullable authorizationStatusString;
 @end
+
 
 
 
