@@ -1,16 +1,16 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "KochavaMeasurement",
-    platforms: 
+    name: "KochavaMeasurement", // the display name in the navigator
+    platforms:
     [
-        .iOS(.v13),
-        .macCatalyst(.v13),
-        .macOS(.v10_15),
-        .tvOS(.v13),
+        .iOS(.v14),
+        .macCatalyst(.v14),
+        .macOS(.v12),
+        .tvOS(.v14),
         .visionOS(.v1),
         .watchOS(.v7)
     ],
@@ -29,12 +29,12 @@ let package = Package(
     [
         // Dependencies declare other packages that this package depends on.
 //        .package(
-//            name: "KochavaNetworking",
+//            name: "Apple-SwiftPackage-KochavaNetworking-XCFramework",
 //            path: "../Apple-SwiftPackage-KochavaNetworking-XCFramework"
 //        )
         .package(
             url: "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
-            from: "8.4.1"
+            from: "9.0.0"
         )
     ],
     targets:
