@@ -282,7 +282,28 @@ extension KochavaMeasurement.Measurement {
     get
   }
   final public func invalidate()
+  final public func customPromptDidComplete()
   @objc(authorizationDidCompleteWithStatus:) final public func authorizationDidComplete(status: AppTrackingTransparency.ATTrackingManager.AuthorizationStatus)
+  final public var customPromptBoolSetTask: KochavaNetworking.Task {
+    get
+    set
+  }
+  final public var customPromptDidCompleteTask: KochavaNetworking.Task {
+    get
+    set
+  }
+  final public var enableTask: KochavaNetworking.Task {
+    get
+    set
+  }
+  final public var setAuthorizationStatusWaitTask: KochavaNetworking.Task {
+    get
+    set
+  }
+  final public var setAutoRequestAuthorizationBoolTask: KochavaNetworking.Task {
+    get
+    set
+  }
   @objc final public var networking: KochavaNetworking.Networking? {
     @objc get
     @objc set
@@ -294,6 +315,10 @@ extension KochavaMeasurement.Measurement {
   @objc final public var authorizationStatusWaitTimeInterval: Foundation.TimeInterval {
     @objc get
     @objc set(authorizationStatusWaitTimeInterval)
+  }
+  @objc final public var customPromptBool: Swift.Bool {
+    @objc get
+    @objc set(customPromptBool)
   }
   @objc final public var enabledBool: Swift.Bool {
     @objc get
@@ -338,7 +363,7 @@ extension KochavaMeasurement.Measurement {
     get
   }
   public static let logger: os.Logger
-  public static var wrapperShutdownTask: KochavaNetworking.Task
+  public static var shutdownTask: KochavaNetworking.Task
   @objc override dynamic public init()
   @objc deinit
 }
@@ -444,7 +469,7 @@ public var shared: KochavaNetworking.Product {
   get
 }
 extension KochavaMeasurement.Measurement {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Deeplinks) final public class Deeplinks : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink.Processor, KochavaMeasurement.Deeplink_DeferredPrefetch_Augmenter, KochavaMeasurement.Deeplink_DeferredPrefetch_AugmenterProvider, KochavaMeasurement.Deeplink.Wrapper.Registrar, KochavaMeasurement.Deeplink.Wrapper.RegistrarProvider, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Deeplinks) final public class Deeplinks : ObjectiveC.NSObject, Foundation.NSCopying, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaMeasurement.Deeplink.Processor, KochavaMeasurement.Deeplink.ProcessorProvider, KochavaMeasurement.Deeplink_DeferredPrefetch_Augmenter, KochavaMeasurement.Deeplink_DeferredPrefetch_AugmenterProvider, KochavaMeasurement.Deeplink.Wrapper.Registrar, KochavaMeasurement.Deeplink.Wrapper.RegistrarProvider, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
     @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
     public static func from(_ object: Any?) -> Self?
     @discardableResult
@@ -466,7 +491,10 @@ extension KochavaMeasurement.Measurement {
     @objc final public var deeplinks_deferredPrefetch_augmenter: any KochavaMeasurement.Deeplink_DeferredPrefetch_Augmenter {
       @objc get
     }
-    @objc(processDeeplink:timeoutTimeInterval:closure_didComplete:) final public func process(deeplink: KochavaMeasurement.Deeplink, timeoutTimeInterval: Foundation.TimeInterval, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
+    @objc(processDeeplink:closure_didComplete:) final public func process(deeplink: KochavaMeasurement.Deeplink, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
+    @objc final public var deeplink_processor: (any KochavaMeasurement.Deeplink.Processor)? {
+      @objc get
+    }
     @objc final public var networking: KochavaNetworking.Networking? {
       @objc get
       @objc set
@@ -486,6 +514,10 @@ extension KochavaMeasurement.Measurement {
     public static let type_kochava: KochavaNetworking.Kochava_Type
     final public var execution: KochavaNetworking.Execution {
       get
+    }
+    final public var boolSetTask: KochavaNetworking.Task {
+      get
+      set
     }
     @objc(boolean) final public var bool_resolved: Swift.Bool {
       @objc get
@@ -751,13 +783,16 @@ extension AppTrackingTransparency.ATTrackingManager.AuthorizationStatus {
   public static func from(_ object: Any?) -> AppTrackingTransparency.ATTrackingManager.AuthorizationStatus?
 }
 extension KochavaMeasurement.Measurement {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Events) final public class Events : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaMeasurement.Event.DefaultParameter.Registrar, KochavaMeasurement.Event.DefaultParameter.RegistrarProvider, KochavaMeasurement.Event.Sender, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_Events) final public class Events : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaMeasurement.Event.DefaultParameter.Registrar, KochavaMeasurement.Event.DefaultParameter.RegistrarProvider, KochavaMeasurement.Event.Sender, KochavaMeasurement.Event.SenderProvider, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider {
     public static func from(_ object: Any?) -> Self?
     @discardableResult
     public static func from(_ object: Any?, initializedObject: Any?) -> Self?
     final public func to(context: KochavaNetworking.Context?) -> Any?
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
     @objc final public func send(event: KochavaMeasurement.Event)
+    @objc final public var event_sender: any KochavaMeasurement.Event.Sender {
+      @objc get
+    }
     public static let logger: os.Logger
     final public func key(context: KochavaNetworking.Context?) -> Swift.AnyHashable?
     public static let type_kochava: KochavaNetworking.Kochava_Type
@@ -805,7 +840,6 @@ extension KochavaMeasurement.Measurement {
     final public func trackingControlDomain2StringAdapter() -> KochavaNetworking.Adapter?
     final public func trackingControlDomain3String() -> Swift.String?
     final public func trackingControlDomain3StringAdapter() -> KochavaNetworking.Adapter?
-    final public let instanceCreatedDate: Foundation.Date
     @objc deinit
   }
 }
@@ -822,7 +856,6 @@ extension KochavaMeasurement.Event {
 }
 extension KochavaMeasurement.Measurement.AdAttribution {
   @_inheritsConvenienceInitializers @objc(KVAMeasurement_AdAttribution_Conversion) final public class Conversion : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, os.Logger.Provider, KochavaNetworking.Startable {
-    @objc deinit
     public static func from(_ object: Any?) -> Self?
     final public func to(context: KochavaNetworking.Context?) -> Any?
     final public func configure(with object: Any?, context: KochavaNetworking.Context?)
@@ -842,6 +875,7 @@ extension KochavaMeasurement.Measurement.AdAttribution {
       @objc get
     }
     @objc override dynamic public init()
+    @objc deinit
   }
 }
 extension KochavaMeasurement.Measurement {
@@ -872,9 +906,9 @@ extension KochavaMeasurement.Measurement {
 }
 @_inheritsConvenienceInitializers @objc(KVADeeplink) final public class Deeplink : ObjectiveC.NSObject, KochavaNetworking.DecodableFrom, KochavaNetworking.EncodableTo, KochavaNetworking.Executable, os.Logger.Provider, KochavaNetworking.Networking.Provider {
   @objc(processWithURL:closure_didComplete:) public static func process(url: Foundation.URL?, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
-  @objc(processWithURL:timeoutTimeInterval:closure_didComplete:) public static func process(url: Foundation.URL?, timeoutTimeInterval: Foundation.TimeInterval, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
+  @objc(processWithURL:timeoutTimeInterval:closure_didComplete:) public static func process(url: Foundation.URL?, timeoutTimeInterval processTimeoutTimeInterval: Foundation.TimeInterval, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
   @objc(processWithURL:processor:closure_didComplete:) public static func process(url: Foundation.URL?, processor: (any KochavaMeasurement.Deeplink.ProcessorProvider)?, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
-  @objc(processWithURL:timeoutTimeInterval:processor:closure_didComplete:) public static func process(url: Foundation.URL?, timeoutTimeInterval: Foundation.TimeInterval, processor: (any KochavaMeasurement.Deeplink.ProcessorProvider)?, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
+  @objc(processWithURL:timeoutTimeInterval:processor:closure_didComplete:) public static func process(url: Foundation.URL?, timeoutTimeInterval processTimeoutTimeInterval: Foundation.TimeInterval, processor: (any KochavaMeasurement.Deeplink.ProcessorProvider)?, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
   public static func from(_ object: Any?) -> Self?
   @objc(kva_toContext:) final public func to(context: KochavaNetworking.Context?) -> Any?
   final public func execute()
@@ -896,7 +930,7 @@ extension KochavaMeasurement.Measurement {
   }
   @objc final public var unwrappedURLString: Swift.String?
   @objc(KVADeeplink_Processor) public protocol Processor {
-    @objc(processDeeplink:timeoutTimeInterval:closure_didComplete:) func process(deeplink: KochavaMeasurement.Deeplink, timeoutTimeInterval: Foundation.TimeInterval, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
+    @objc(processDeeplink:closure_didComplete:) func process(deeplink: KochavaMeasurement.Deeplink, closure_didComplete: KochavaMeasurement.Deeplink.Closure_Process_DidComplete?)
   }
   @objc(KVADeeplink_ProcessorProvider) public protocol ProcessorProvider {
     @objc var deeplink_processor: (any KochavaMeasurement.Deeplink.Processor)? { get }

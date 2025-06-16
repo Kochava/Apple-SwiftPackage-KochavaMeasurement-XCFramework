@@ -3,7 +3,7 @@
 //  KochavaMeasurement
 //
 //  Created by John Bushnell on 10/20/17.
-//  Copyright © 2013 - 2024 Kochava, Inc.  All rights reserved.
+//  Copyright © 2013 - 2025 Kochava, Inc.  All rights reserved.
 //
 
 

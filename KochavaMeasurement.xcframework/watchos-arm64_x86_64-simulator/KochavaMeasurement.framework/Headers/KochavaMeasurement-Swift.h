@@ -536,7 +536,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 /// Create a deeplink and then process it.
 /// \param url The deep link url as provided.
 ///
@@ -554,7 +554,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 - (id _Nullable)kva_toContext:(KVAContext * _Nullable)context SWIFT_WARN_UNUSED_RESULT;
 /// The deeplink url as provided by the operating system.
 @property (nonatomic, copy) NSString * _Nullable urlString;
@@ -578,11 +578,9 @@ SWIFT_PROTOCOL_NAMED("Processor")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 @end
 
 
@@ -1451,7 +1449,7 @@ SWIFT_CLASS_NAMED("AppLimitAdTracking")
 
 /// A feature which measures and processes deeplinks.
 SWIFT_CLASS_NAMED("Deeplinks")
-@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
+@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVADeeplink_ProcessorProvider, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 /// Register wrapper.
@@ -1467,11 +1465,10 @@ SWIFT_CLASS_NAMED("Deeplinks")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+@property (nonatomic, readonly, strong) id <KVADeeplink_Processor> _Nullable deeplink_processor;
 /// An instance of networking.
 @property (nonatomic, strong) KVANetworking * _Nullable networking;
 @end
@@ -1561,9 +1558,10 @@ SWIFT_CLASS_NAMED("Install")
 
 /// A feature which tracks user behavior and actions beyond the install.
 SWIFT_CLASS_NAMED("Events")
-@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
+@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_SenderProvider, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)sendEvent:(KVAEvent * _Nonnull)event;
+@property (nonatomic, readonly, strong) id <KVAEvent_Sender> _Nonnull event_sender;
 /// Register a default parameter.
 /// See class Event.<code>Event/DefaultParameter</code>.
 /// \param defaultParameter The default parameter.
@@ -1586,6 +1584,9 @@ SWIFT_CLASS_NAMED("Measurement_AppTrackingTransparency")
 /// A time interval to wait for the request for tracking authorization before proceeding to send the install.
 /// Default 30.0.  Subject to server-based override.  This provides time to wait to obtain the authorization necessary to collect the IDFA.
 @property (nonatomic) NSTimeInterval authorizationStatusWaitTimeInterval;
+/// A boolean which indicates if the prompt (or prompt timing) is going to be handled in a custom way.
+/// Default false.
+@property (nonatomic) BOOL customPromptBool;
 /// A boolean indicating if this feature is enabled.
 /// Default: false.
 @property (nonatomic) BOOL enabledBool;
@@ -2179,7 +2180,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 /// Create a deeplink and then process it.
 /// \param url The deep link url as provided.
 ///
@@ -2197,7 +2198,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 - (id _Nullable)kva_toContext:(KVAContext * _Nullable)context SWIFT_WARN_UNUSED_RESULT;
 /// The deeplink url as provided by the operating system.
 @property (nonatomic, copy) NSString * _Nullable urlString;
@@ -2221,11 +2222,9 @@ SWIFT_PROTOCOL_NAMED("Processor")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 @end
 
 
@@ -3094,7 +3093,7 @@ SWIFT_CLASS_NAMED("AppLimitAdTracking")
 
 /// A feature which measures and processes deeplinks.
 SWIFT_CLASS_NAMED("Deeplinks")
-@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
+@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVADeeplink_ProcessorProvider, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 /// Register wrapper.
@@ -3110,11 +3109,10 @@ SWIFT_CLASS_NAMED("Deeplinks")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+@property (nonatomic, readonly, strong) id <KVADeeplink_Processor> _Nullable deeplink_processor;
 /// An instance of networking.
 @property (nonatomic, strong) KVANetworking * _Nullable networking;
 @end
@@ -3204,9 +3202,10 @@ SWIFT_CLASS_NAMED("Install")
 
 /// A feature which tracks user behavior and actions beyond the install.
 SWIFT_CLASS_NAMED("Events")
-@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
+@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_SenderProvider, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)sendEvent:(KVAEvent * _Nonnull)event;
+@property (nonatomic, readonly, strong) id <KVAEvent_Sender> _Nonnull event_sender;
 /// Register a default parameter.
 /// See class Event.<code>Event/DefaultParameter</code>.
 /// \param defaultParameter The default parameter.
@@ -3229,6 +3228,9 @@ SWIFT_CLASS_NAMED("Measurement_AppTrackingTransparency")
 /// A time interval to wait for the request for tracking authorization before proceeding to send the install.
 /// Default 30.0.  Subject to server-based override.  This provides time to wait to obtain the authorization necessary to collect the IDFA.
 @property (nonatomic) NSTimeInterval authorizationStatusWaitTimeInterval;
+/// A boolean which indicates if the prompt (or prompt timing) is going to be handled in a custom way.
+/// Default false.
+@property (nonatomic) BOOL customPromptBool;
 /// A boolean indicating if this feature is enabled.
 /// Default: false.
 @property (nonatomic) BOOL enabledBool;

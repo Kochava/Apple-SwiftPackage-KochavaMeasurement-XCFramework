@@ -538,7 +538,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 /// Create a deeplink and then process it.
 /// \param url The deep link url as provided.
 ///
@@ -556,7 +556,7 @@ SWIFT_CLASS_NAMED("Deeplink")
 ///
 /// \param closure_didComplete A closure to be called when processing is complete.
 ///
-+ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
++ (void)processWithURL:(NSURL * _Nullable)url timeoutTimeInterval:(NSTimeInterval)processTimeoutTimeInterval processor:(id <KVADeeplink_ProcessorProvider> _Nullable)processor closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 - (id _Nullable)kva_toContext:(KVAContext * _Nullable)context SWIFT_WARN_UNUSED_RESULT;
 /// The deeplink url as provided by the operating system.
 @property (nonatomic, copy) NSString * _Nullable urlString;
@@ -580,11 +580,9 @@ SWIFT_PROTOCOL_NAMED("Processor")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
 @end
 
 
@@ -592,6 +590,40 @@ SWIFT_PROTOCOL_NAMED("ProcessorProvider")
 @protocol KVADeeplink_ProcessorProvider
 /// A property which conforms to protocol Processor.
 @property (nonatomic, readonly, strong) id <KVADeeplink_Processor> _Nullable deeplink_processor;
+@end
+
+
+@interface KVADeeplink (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+@protocol KVADeeplink_DeferredPrefetch_AugmenterProvider;
+
+/// A deferred prefetch for deeplinks.
+SWIFT_CLASS_NAMED("DeferredPrefetch")
+@interface KVADeeplink_DeferredPrefetch : NSObject <KVANetworking_Provider>
+/// Create a deferred prefetch and then augment the deeplink process with it.
+/// \param name The name of the deferred prefetch.
+///
+/// \param identifier The identifier.  An identifier of nil will remove any existing identifier under the specified name.
+///
++ (void)augmentWithName:(NSString * _Nonnull)name identifier:(NSString * _Nullable)identifier;
+/// Create a deferred prefetch and then augment it.
+/// \param name The name of the deferred prefetch.
+///
+/// \param identifier The identifier.  An identifier of nil will remove any existing identifier under the specified name.
+///
+/// \param augmenterArray An array of Deeplink_DeferredPrefetch_AugmenterProvider to which to augment the deferred prefetch.
+///
++ (void)augmentWithName:(NSString * _Nonnull)name identifier:(NSString * _Nullable)identifier augmenterArray:(NSArray<id <KVADeeplink_DeferredPrefetch_AugmenterProvider>> * _Nullable)augmenterArray;
+/// A unique name for the deferred prefetch augmentation.
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// The identifier.
+@property (nonatomic, readonly, copy) NSString * _Nullable identifier;
+/// An instance of networking.
+/// This exists here related to the conformance to Executable and then Networking.Provider.  When this instance is constructed and then executed as an executable from within the the networking class, the networking class will also when possible stamp itself here as an indication of where it originated, so that this instance can properly default where it should be sent to be executed.  This can be derived from the networking.execution.parentExecutor when cast to whatever it may be expected to be.  Because it’s weak it may disappear at some point, but if it’s there it’s a better default than a shared instance.
+@property (nonatomic, strong) KVANetworking * _Nullable networking;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -633,40 +665,6 @@ SWIFT_PROTOCOL_NAMED("RegistrarProvider")
 @protocol KVADeeplink_Wrapper_RegistrarProvider
 /// A property which conforms to protocol Registrar.
 @property (nonatomic, readonly, strong) id <KVADeeplink_Wrapper_Registrar> _Nonnull deeplink_wrapper_registrar;
-@end
-
-
-@interface KVADeeplink (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-@protocol KVADeeplink_DeferredPrefetch_AugmenterProvider;
-
-/// A deferred prefetch for deeplinks.
-SWIFT_CLASS_NAMED("DeferredPrefetch")
-@interface KVADeeplink_DeferredPrefetch : NSObject <KVANetworking_Provider>
-/// Create a deferred prefetch and then augment the deeplink process with it.
-/// \param name The name of the deferred prefetch.
-///
-/// \param identifier The identifier.  An identifier of nil will remove any existing identifier under the specified name.
-///
-+ (void)augmentWithName:(NSString * _Nonnull)name identifier:(NSString * _Nullable)identifier;
-/// Create a deferred prefetch and then augment it.
-/// \param name The name of the deferred prefetch.
-///
-/// \param identifier The identifier.  An identifier of nil will remove any existing identifier under the specified name.
-///
-/// \param augmenterArray An array of Deeplink_DeferredPrefetch_AugmenterProvider to which to augment the deferred prefetch.
-///
-+ (void)augmentWithName:(NSString * _Nonnull)name identifier:(NSString * _Nullable)identifier augmenterArray:(NSArray<id <KVADeeplink_DeferredPrefetch_AugmenterProvider>> * _Nullable)augmenterArray;
-/// A unique name for the deferred prefetch augmentation.
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
-/// The identifier.
-@property (nonatomic, readonly, copy) NSString * _Nullable identifier;
-/// An instance of networking.
-/// This exists here related to the conformance to Executable and then Networking.Provider.  When this instance is constructed and then executed as an executable from within the the networking class, the networking class will also when possible stamp itself here as an indication of where it originated, so that this instance can properly default where it should be sent to be executed.  This can be derived from the networking.execution.parentExecutor when cast to whatever it may be expected to be.  Because it’s weak it may disappear at some point, but if it’s there it’s a better default than a shared instance.
-@property (nonatomic, strong) KVANetworking * _Nullable networking;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1395,26 +1393,6 @@ SWIFT_CLASS_NAMED("Datapoints")
 @end
 
 
-/// A feature which is responsible for custom values.
-SWIFT_CLASS_NAMED("CustomValues")
-@interface KVAMeasurement_CustomValues : NSObject <NSCopying, KVACustomValue_Registrar, KVACustomValue_RegistrarProvider, KVANetworking_Provider>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-/// Register a custom value.
-/// See class <code>CustomValue</code>.
-/// \param customValue The custom value.
-///
-- (void)register:(KVACustomValue * _Nonnull)customValue;
-@property (nonatomic, readonly, strong) id <KVACustomValue_Registrar> _Nonnull customValue_registrar;
-/// An instance of networking.
-@property (nonatomic, strong) KVANetworking * _Nullable networking;
-@end
-
-
-@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
-@end
-
-
 @interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
 @end
 
@@ -1424,6 +1402,25 @@ SWIFT_CLASS_NAMED("General")
 @interface KVAMeasurement_General : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface KVAMeasurement (SWIFT_EXTENSION(KochavaMeasurement))
+@end
+
+
+/// A feature which tracks user behavior and actions beyond the install.
+SWIFT_CLASS_NAMED("Events")
+@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_SenderProvider, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)sendEvent:(KVAEvent * _Nonnull)event;
+@property (nonatomic, readonly, strong) id <KVAEvent_Sender> _Nonnull event_sender;
+/// Register a default parameter.
+/// See class Event.<code>Event/DefaultParameter</code>.
+/// \param defaultParameter The default parameter.
+///
+- (void)register:(KVAEvent_DefaultParameter * _Nonnull)defaultParameter;
+@property (nonatomic, readonly, strong) id <KVAEvent_DefaultParameter_Registrar> _Nonnull event_defaultParameter_registrar;
 @end
 
 
@@ -1461,7 +1458,7 @@ SWIFT_CLASS_NAMED("AppLimitAdTracking")
 
 /// A feature which measures and processes deeplinks.
 SWIFT_CLASS_NAMED("Deeplinks")
-@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
+@interface KVAMeasurement_Deeplinks : NSObject <NSCopying, KVADeeplink_DeferredPrefetch_Augmenter, KVADeeplink_DeferredPrefetch_AugmenterProvider, KVADeeplink_Processor, KVADeeplink_ProcessorProvider, KVANetworking_Provider, KVADeeplink_Wrapper_Registrar, KVADeeplink_Wrapper_RegistrarProvider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 /// Register wrapper.
@@ -1477,11 +1474,10 @@ SWIFT_CLASS_NAMED("Deeplinks")
 /// Process a deeplink.
 /// \param deeplink An instance of Deeplink.
 ///
-/// \param timeoutTimeInterval A timeout time interval.
-///
 /// \param closure_didComplete A completion handler to call when processing is complete.
 ///
-- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink timeoutTimeInterval:(NSTimeInterval)timeoutTimeInterval closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+- (void)processDeeplink:(KVADeeplink * _Nonnull)deeplink closure_didComplete:(void (^ _Nullable)(KVADeeplink * _Nonnull))closure_didComplete;
+@property (nonatomic, readonly, strong) id <KVADeeplink_Processor> _Nullable deeplink_processor;
 /// An instance of networking.
 @property (nonatomic, strong) KVANetworking * _Nullable networking;
 @end
@@ -1569,17 +1565,19 @@ SWIFT_CLASS_NAMED("Install")
 @end
 
 
-/// A feature which tracks user behavior and actions beyond the install.
-SWIFT_CLASS_NAMED("Events")
-@interface KVAMeasurement_Events : NSObject <KVAEvent_Sender, KVAEvent_DefaultParameter_Registrar, KVAEvent_DefaultParameter_RegistrarProvider>
+/// A feature which is responsible for custom values.
+SWIFT_CLASS_NAMED("CustomValues")
+@interface KVAMeasurement_CustomValues : NSObject <NSCopying, KVACustomValue_Registrar, KVACustomValue_RegistrarProvider, KVANetworking_Provider>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)sendEvent:(KVAEvent * _Nonnull)event;
-/// Register a default parameter.
-/// See class Event.<code>Event/DefaultParameter</code>.
-/// \param defaultParameter The default parameter.
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+/// Register a custom value.
+/// See class <code>CustomValue</code>.
+/// \param customValue The custom value.
 ///
-- (void)register:(KVAEvent_DefaultParameter * _Nonnull)defaultParameter;
-@property (nonatomic, readonly, strong) id <KVAEvent_DefaultParameter_Registrar> _Nonnull event_defaultParameter_registrar;
+- (void)register:(KVACustomValue * _Nonnull)customValue;
+@property (nonatomic, readonly, strong) id <KVACustomValue_Registrar> _Nonnull customValue_registrar;
+/// An instance of networking.
+@property (nonatomic, strong) KVANetworking * _Nullable networking;
 @end
 
 
@@ -1600,6 +1598,9 @@ SWIFT_CLASS_NAMED("Measurement_AppTrackingTransparency")
 /// A time interval to wait for the request for tracking authorization before proceeding to send the install.
 /// Default 30.0.  Subject to server-based override.  This provides time to wait to obtain the authorization necessary to collect the IDFA.
 @property (nonatomic) NSTimeInterval authorizationStatusWaitTimeInterval;
+/// A boolean which indicates if the prompt (or prompt timing) is going to be handled in a custom way.
+/// Default false.
+@property (nonatomic) BOOL customPromptBool;
 /// A boolean indicating if this feature is enabled.
 /// Default: false.
 @property (nonatomic) BOOL enabledBool;
@@ -1607,7 +1608,6 @@ SWIFT_CLASS_NAMED("Measurement_AppTrackingTransparency")
 /// This is optional and will be nil until a status is known.  For this reason this can be checked as a means of determining if a status has been determined.  Current possible values:  “authorized”, “denied”, “notDetermined”, “restricted”, “unknown”.
 @property (nonatomic, readonly, copy) NSString * _Nullable authorizationStatusString;
 @end
-
 
 
 /// A feature which provides for attribution through Apple’s Apple Search Ads method 3.
@@ -1620,6 +1620,7 @@ SWIFT_CLASS("_TtCCC18KochavaMeasurement11Measurement14AppleSearchAds7Method3")
 
 @interface Method3 (SWIFT_EXTENSION(KochavaMeasurement))
 @end
+
 
 @class KochavaNetworking_Product;
 
@@ -1642,6 +1643,7 @@ SWIFT_CLASS("_TtC18KochavaMeasurement7Session")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 @interface KVADeeplink_Wrapper (SWIFT_EXTENSION(KochavaMeasurement))
