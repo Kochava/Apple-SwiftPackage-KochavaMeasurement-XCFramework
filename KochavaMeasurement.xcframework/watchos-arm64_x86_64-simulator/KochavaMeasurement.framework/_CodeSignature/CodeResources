@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaMeasurement-Swift.h</key>
 		<data>
-		/tgzCN1MEO1Rtn/Yv9eldzxqwJU=
+		t3HXa1WryfwF14c+8mFMKf24Ff4=
 		</data>
 		<key>Headers/KochavaMeasurement.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r+MF9n5o1aH4Xr1B9ODtAQxahVQ=
+		el9mvlQimkIODiSOD1QxZnaJKCo=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		ePm1jfq4yHuM8HR5nZtAC7RkgmI=
+		LLc/bvE7nfCvpSNh/iALgTXy7pA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		cENhGwmDe64xcglfRdBojUcDrEA=
+		S4FYsiozFBge5xJpDds15EwEvrU=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		0CojC5TahIFPN8nRYrHprpBY/sA=
+		G7Z5hXz7jNzVEW366YSuFazTpcg=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		cENhGwmDe64xcglfRdBojUcDrEA=
+		S4FYsiozFBge5xJpDds15EwEvrU=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		X28ZQ0Sr0tQWvk54YgiGWID0WlA=
+		RBE3Je/nEd6NCjeJEM2WgTzIUeo=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		ePm1jfq4yHuM8HR5nZtAC7RkgmI=
+		LLc/bvE7nfCvpSNh/iALgTXy7pA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		pPNBbI6OmHf17JXw66mc850jUfE=
+		o/Yhng3ul4zGUmEXMj6zhp4g57A=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		lPcgqO92E+HPBo2qFBnoqSn8+bw=
+		8KIeDaUWUg85O8TfwZ4y/LqRuVQ=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		pPNBbI6OmHf17JXw66mc850jUfE=
+		o/Yhng3ul4zGUmEXMj6zhp4g57A=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		DYcgnZEwxNDQiV7HuEG7i0lsyI0=
+		6mB1AU17RrUy/ZXnwdflYoVxKfI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KgqVdQWa0Wc49Q7h0Wm9LBoQLjsTd8yc0k5m6Hx76OA=
+			xl0x9PrF+qFOd7oes3Nsn92LHqdR8wjj7ViHLadOxxs=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MQQYVZOFcXI/j1xBRbPTwVHo9MfUfpdSZaUF1Q7/5eU=
+			snnqc0hFtbb/8z2MRTvo//+735L+VF6ayndZPl73ShE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zrWjHpHrgsRsKNYwt6j8z77P4P/LBOeBBcS3wqw2HGM=
+			q1RBVc1shqe8Y2yi3By4cmKhihXHPxkyq0q+nIEVhrs=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Be7ZTHBSidApNfjAqcPGoST/WHpuJp+Kc9cbaZSA2I4=
+			IftaxHrWBbSD/JovAgxA3UTuap3VG5fJewHWEXiUa0g=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zrWjHpHrgsRsKNYwt6j8z77P4P/LBOeBBcS3wqw2HGM=
+			q1RBVc1shqe8Y2yi3By4cmKhihXHPxkyq0q+nIEVhrs=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bZKWRwJnjEDJM6BuwvzPAnJjQHkW7EU3hxCmdVZhtpk=
+			eC2VyBn2VFzv5IKtEhY+7n0Kgkrs/KorzT01iZG7FhY=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MQQYVZOFcXI/j1xBRbPTwVHo9MfUfpdSZaUF1Q7/5eU=
+			snnqc0hFtbb/8z2MRTvo//+735L+VF6ayndZPl73ShE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ra1ZYSPx5PEksjM5PqAm34Dzhd1PFEn4Vcr0rSTwd7Q=
+			beyhfrPAy/eGPkkh2ZWFR5SVtqkAXQm0LBIk1plN1pw=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q9nZ2oZKGvVLzS5J30JyATapvDhbElUUWIIbqwZSRi4=
+			AQ6QLkl5K+7f0ShpUhiUNTrp6yB+mPB29HE4JeXt0+A=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ra1ZYSPx5PEksjM5PqAm34Dzhd1PFEn4Vcr0rSTwd7Q=
+			beyhfrPAy/eGPkkh2ZWFR5SVtqkAXQm0LBIk1plN1pw=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SP1zn6uwq+YNB6wwdDR3GCPLcOp9Rh/v77Vtu4VzkR4=
+			+i8/9bnBf0ezpM2RI8aQguPMITJl1YavUBBDkgO12b8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

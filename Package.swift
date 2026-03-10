@@ -7,12 +7,12 @@ let package = Package(
     name: "KochavaMeasurement", // the display name in the navigator
     platforms:
     [
-        .iOS(.v14),
-        .macCatalyst(.v14),
-        .macOS(.v12),
-        .tvOS(.v14),
+        .iOS(.v15),
+        .macCatalyst(.v15),
+        .macOS(.v13),
+        .tvOS(.v16),
         .visionOS(.v1),
-        .watchOS(.v7)
+        .watchOS(.v9)
     ],
     products:
     [
@@ -34,7 +34,7 @@ let package = Package(
 //        )
         .package(
             url: "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
-            from: "9.1.0"
+            from: "10.0.0"
         )
     ],
     targets:
