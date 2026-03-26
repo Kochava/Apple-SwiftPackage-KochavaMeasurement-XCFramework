@@ -492,7 +492,6 @@ extension KochavaMeasurement.Measurement {
 }
 extension KochavaMeasurement.Measurement {
   @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(KVAMeasurement_InstallIdentifier) final public class InstallIdentifier : ObjectiveC.NSObject, KochavaNetworking.ConfigurableWith, KochavaNetworking.DecodableFrom, KochavaNetworking.DecodableFromWithInitializedObject, KochavaNetworking.EncodableTo, KochavaNetworking.Executor, KochavaNetworking.Invalidatable, KochavaNetworking.Keyable, os.Logger.Provider, KochavaNetworking.Startable {
-    @objc deinit
     #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ object: Any?) -> Self?
     #endif
@@ -519,6 +518,7 @@ extension KochavaMeasurement.Measurement {
     }
     final public func invalidate()
     public typealias Identifier = Swift.String
+    @objc deinit
   }
 }
 extension KochavaMeasurement.Measurement.AdAttribution.Conversion {
