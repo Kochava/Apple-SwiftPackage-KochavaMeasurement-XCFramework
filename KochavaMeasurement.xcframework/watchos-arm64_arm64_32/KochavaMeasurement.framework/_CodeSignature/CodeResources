@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F291kkzfpiotLBDjww6BKleds94=
+		kqeUkbM++vWUXmKDJ08LwnatRyk=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		CdldXU21vtRTHwOLjTslpuqkpK0=
+		h96NtbR+sfwL9sSS16iDcJ9Pygw=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		CdldXU21vtRTHwOLjTslpuqkpK0=
+		h96NtbR+sfwL9sSS16iDcJ9Pygw=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
@@ -85,11 +85,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CdldXU21vtRTHwOLjTslpuqkpK0=
+			h96NtbR+sfwL9sSS16iDcJ9Pygw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2o26Feyrl5ORo1ENcsnjsVEJrr2P+j9XL35iT5NeOK4=
+			u26567xUSl8Nsw9ofKBpU+JHMOWR2tQIynvFk5Ds9BY=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CdldXU21vtRTHwOLjTslpuqkpK0=
+			h96NtbR+sfwL9sSS16iDcJ9Pygw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2o26Feyrl5ORo1ENcsnjsVEJrr2P+j9XL35iT5NeOK4=
+			u26567xUSl8Nsw9ofKBpU+JHMOWR2tQIynvFk5Ds9BY=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		VtAKRbsIRgPrNN3c4v3tfhIzhCw=
+		rSg3I+LHBKvOPEEsTFg9FkrqMHA=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -33,7 +33,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DIm5/gg/Yrcsox1Gxpbs/6j8sefs6iSHHxMSbqOJa2E=
+			P0+OTj8eyUutOp/oZRdA1Bh/EfH5in6yz7HE3i4IeLU=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DIm5/gg/Yrcsox1Gxpbs/6j8sefs6iSHHxMSbqOJa2E=
+			P0+OTj8eyUutOp/oZRdA1Bh/EfH5in6yz7HE3i4IeLU=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpINLp/f96YF18woywdm9N369JsKMp9Xy2tOpw252NU=
+			wIZoxOwRRZ4s0su9cQ7y2DvXl+I8ysoPKBECeb4F/6E=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		s9gXTkuziV07Tv4scEuqOOMXyow=
+		toDYroS4X6xzNZLxhOdpOAEdnqA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		/JB3RmIi/5oL4B2egTwb3GAlJzM=
+		yPecsjGcojIgiZe2zKhRcSjkAxE=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		/JB3RmIi/5oL4B2egTwb3GAlJzM=
+		yPecsjGcojIgiZe2zKhRcSjkAxE=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -77,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fM4dEd8BQJqHYRipGUXyfZixN0ia1CmVyaCWYgO8oFY=
+			0yRlikHnYCD7Dn+mgNz2o5D5AeKVrebJolJHatKHLNM=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fM4dEd8BQJqHYRipGUXyfZixN0ia1CmVyaCWYgO8oFY=
+			0yRlikHnYCD7Dn+mgNz2o5D5AeKVrebJolJHatKHLNM=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>

@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PCuFb4LRwivhGDZ8rCJqTeyskJA=
+		P9AI6zGnKJsW1C1aRskKpL3RSqE=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		oK1/XRvuGolWKxxRYS2Ppg77pPM=
+		esoLPsKliyJ9cPXUJrCmaLLkclA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		oK1/XRvuGolWKxxRYS2Ppg77pPM=
+		esoLPsKliyJ9cPXUJrCmaLLkclA=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
@@ -77,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I9WQWB+u9tb/jv4KAvoejZ/VlGNcvLnzU9zL8VOfnTM=
+			aOtNW84MtFSnmiRK8C19kl0BHJfW8rcg5pZaK+03XgE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I9WQWB+u9tb/jv4KAvoejZ/VlGNcvLnzU9zL8VOfnTM=
+			aOtNW84MtFSnmiRK8C19kl0BHJfW8rcg5pZaK+03XgE=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
