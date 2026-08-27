@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaMeasurement-Swift.h</key>
 		<data>
-		t3HXa1WryfwF14c+8mFMKf24Ff4=
+		+4dx5ATfz6MWFF0NiCeQvh6PrPY=
 		</data>
 		<key>Headers/KochavaMeasurement.h</key>
 		<data>
@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QdgE2oyuXXUy5xGRfmN2VSDOnrs=
+		qq85eSn0BK8YS3ThTa5q0XWcYmY=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		/hm+vP1+wD680t2r/PRsI4QJIkk=
+		O5MKZO5Vd20W6MNJ634D18w6KMw=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		1YpB2pWqLkxKJjdvurzYM1MUpsA=
+		oh7BLZgiVhjQSpLpDBRkk+lbIYk=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		G7Z5hXz7jNzVEW366YSuFazTpcg=
+		NP2wVhP93XUGZi7iEFUxo9xgpZ8=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		1YpB2pWqLkxKJjdvurzYM1MUpsA=
+		oh7BLZgiVhjQSpLpDBRkk+lbIYk=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		/hm+vP1+wD680t2r/PRsI4QJIkk=
+		O5MKZO5Vd20W6MNJ634D18w6KMw=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		6456iIkL+OKsHjsLZiuc/rxxbmI=
+		ZYTMY6epHQoLEmgrlBGLkCfBsbE=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		8KIeDaUWUg85O8TfwZ4y/LqRuVQ=
+		OK4B1ZdNFAhW8yz+S6I7fmCLr98=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		6456iIkL+OKsHjsLZiuc/rxxbmI=
+		ZYTMY6epHQoLEmgrlBGLkCfBsbE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xl0x9PrF+qFOd7oes3Nsn92LHqdR8wjj7ViHLadOxxs=
+			J6iRNHJs4bQQ2pVKqmxqJDJTfketsR9AnhO6uXdh1Mk=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -77,56 +77,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			60Tpprt8RYaRlvNN7/tTXJPS/Q6daWHCZXH0+EiTvMU=
+			ISFJ8E+o2pqHOYDQ5JumuGGoDIG1ZA0Bqa5Gu8Gdcf4=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AlPyV+N3UgmnJZn0nwCe+VgeUt9bdFhcg5lTqFQMI4=
+			1uA6b/yBOlNdBC3WBdk6X3KH2RHQKqUcuL1/8GOJm8k=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IftaxHrWBbSD/JovAgxA3UTuap3VG5fJewHWEXiUa0g=
+			+CP4aN4cgfZTdse8wNbVKW90gD0DqhtSfv4dC33C6Uw=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AlPyV+N3UgmnJZn0nwCe+VgeUt9bdFhcg5lTqFQMI4=
+			1uA6b/yBOlNdBC3WBdk6X3KH2RHQKqUcuL1/8GOJm8k=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			60Tpprt8RYaRlvNN7/tTXJPS/Q6daWHCZXH0+EiTvMU=
+			ISFJ8E+o2pqHOYDQ5JumuGGoDIG1ZA0Bqa5Gu8Gdcf4=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eFfI/pcOKzaSDpaTBogTy2fg3bY1s4lL6Ziu9CM5jBs=
+			ge5zPt+eUR4KVciw59KFHXbv1+3uTgZC/6EyjMDS8nc=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AQ6QLkl5K+7f0ShpUhiUNTrp6yB+mPB29HE4JeXt0+A=
+			oaiiPl0u8anDLo1WsjFj0wPJjol9lBfxuo9OuaURdBQ=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eFfI/pcOKzaSDpaTBogTy2fg3bY1s4lL6Ziu9CM5jBs=
+			ge5zPt+eUR4KVciw59KFHXbv1+3uTgZC/6EyjMDS8nc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

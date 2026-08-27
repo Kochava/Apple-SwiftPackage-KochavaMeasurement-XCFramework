@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaMeasurement-Swift.h</key>
 		<data>
-		pOh9nV/AyEclS8CDeeYiDZs3oL4=
+		iiw8MVyBHkPWv02ED+J8zPZyDlE=
 		</data>
 		<key>Headers/KochavaMeasurement.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O2sb8V7/kwV99seaJVjHtE5c8nI=
+		gpTv+I1A5hucKcUL+CgtqQWvJTQ=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		B2PhyWLsJVDd5WxiFaLSi0U1omQ=
+		0qgl0I7ZFhwmmjrgzWlF5HQo8M8=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		8L84VqZefKWJEUtM2VQvRhE9n80=
+		siHur2uciGQYTD4K4jQeFGLyu1s=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		ElFi8/oTwUJpdSx3ZUGxL7g0WIw=
+		eC9DsvjUGAzFY/5O9Cf6U/F8+oY=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		8L84VqZefKWJEUtM2VQvRhE9n80=
+		siHur2uciGQYTD4K4jQeFGLyu1s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Sefrb8Ip4UhV4dUbIDMYGHqr7kIQjQY7BoZ6JAdhnk=
+			1p/LGt2FJ4PRRFkJVng1vO8Y320iXQWt8c7PUe47+to=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -61,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0ISkloQ0m+YlUukSp5/+gy8qcht8iFNLxfazb8Igmg=
+			HToOBKz9KK+RFir8r8Ta5RVm9HXdWET5S/tq2iyqmNQ=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ng3K5XqToWUYWiyAxpiqMlvDqsnunVcPuFPxBS64Sbk=
+			qRsckwGlZGxiLxPEXy4/O/Ho77NHVPhLPKLPgfTy3l0=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NvYkhZD7HfTOAm/afp36bwRaEIKJZRO1ImEDK87hAts=
+			pk++Nbbj2w18XQkmqiN++Es7N7ullA4wMVDSW1G8co4=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ng3K5XqToWUYWiyAxpiqMlvDqsnunVcPuFPxBS64Sbk=
+			qRsckwGlZGxiLxPEXy4/O/Ho77NHVPhLPKLPgfTy3l0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

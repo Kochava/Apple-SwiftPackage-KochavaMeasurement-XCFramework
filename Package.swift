@@ -34,7 +34,7 @@ let package = Package(
 //        )
         .package(
             url: "https://github.com/Kochava/Apple-SwiftPackage-KochavaNetworking-XCFramework",
-            from: "10.1.0"
+            from: "11.0.0"
         )
     ],
     targets:

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		rSg3I+LHBKvOPEEsTFg9FkrqMHA=
+		O+4EgjD6bWh6KbKIXvYcYYvskhk=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -19,7 +19,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iJKfOu70BpMyjVpzLurSaY9Yx1khX/UAeBbwNI8coHk=
+			3IrewPztxbOU93xKzdGp3Qv3H67OP7RpjBw8miCyd9k=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -33,56 +33,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0+OTj8eyUutOp/oZRdA1Bh/EfH5in6yz7HE3i4IeLU=
+			q2DwAAOpABggIJH3S4PwC9F4/BNgK6wImWHu3p61b64=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hNQzohGoWq986XaeAnW2nbcfZ7yi/Pdb7UxCxb/kASw=
+			36UpBu/C1Or8SO/eqm8nb5GjNDSpNqZM0l78Q1oenAI=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bGu6UDRZLrrzYTNrqjL72gUyN+5lpgmGf/sxh/PPZg4=
+			6TcKqkehDCQZzpgPM2wOx9zQydFm1id5nDCZGPdE53Q=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hNQzohGoWq986XaeAnW2nbcfZ7yi/Pdb7UxCxb/kASw=
+			36UpBu/C1Or8SO/eqm8nb5GjNDSpNqZM0l78Q1oenAI=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0+OTj8eyUutOp/oZRdA1Bh/EfH5in6yz7HE3i4IeLU=
+			q2DwAAOpABggIJH3S4PwC9F4/BNgK6wImWHu3p61b64=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T4ralKiXy1BLGBCwtN8aza1APqztiCR6a5Jd/s2x428=
+			gAs3eg/aL17m5WXTDdEzxFKJNmyAjXhmdaoOWq+A7EU=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6QAVCdP7kR3rocBGzaau4WLtuZqQb/JTgib38bns8gg=
+			1l5VX56W+JDyyfd0IIGLmycfBuiKHdJ7P6EJ8ogPuVY=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T4ralKiXy1BLGBCwtN8aza1APqztiCR6a5Jd/s2x428=
+			gAs3eg/aL17m5WXTDdEzxFKJNmyAjXhmdaoOWq+A7EU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wIZoxOwRRZ4s0su9cQ7y2DvXl+I8ysoPKBECeb4F/6E=
+			+FKOkhWokXLmB/NOojsq6YqfcNcNTC4QS/3mx4VMnkw=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KochavaMeasurement-Swift.h</key>
 		<data>
-		GDlB3Z/lAcxxJXYYToZton/jud4=
+		vX02VzDvaH0hR5zmpxNMcXz1daQ=
 		</data>
 		<key>Headers/KochavaMeasurement.h</key>
 		<data>
@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kqeUkbM++vWUXmKDJ08LwnatRyk=
+		pIM/4MQy+A/Bqe3jPtT/v/QOM/4=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		h96NtbR+sfwL9sSS16iDcJ9Pygw=
+		wUJ9WXhwRaVqnJPUF4qLpBKmwLY=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		/zCeC8sKG+Ls6eFfn7oOo0OZsrk=
+		UsGvaV3sUL23J7cuulCkyQNlBQc=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		8PFepyIr5CdjnB+pk++GjiP4nj4=
+		KZx0iLwsxxHg4TabZ/1+Cv+hFvE=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		/zCeC8sKG+Ls6eFfn7oOo0OZsrk=
+		UsGvaV3sUL23J7cuulCkyQNlBQc=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		h96NtbR+sfwL9sSS16iDcJ9Pygw=
+		wUJ9WXhwRaVqnJPUF4qLpBKmwLY=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		+3EDL/NicYWv8OWBFzoyOCyFL8A=
+		da1Dr50TEK+q/LsIBTrbO+xqFIo=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		nL5Pq2g8YClQ8XfAFDqTZwYQKu8=
+		3hrgZlXIytECPyZnQxPwV5WQXM8=
 		</data>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		+3EDL/NicYWv8OWBFzoyOCyFL8A=
+		da1Dr50TEK+q/LsIBTrbO+xqFIo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GDlB3Z/lAcxxJXYYToZton/jud4=
+			vX02VzDvaH0hR5zmpxNMcXz1daQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kQTJ7zhrZ3hcvMTnkQvsZu/NOFO0DJ+iNJnwo5BbAfk=
+			HWu4hP7ApwYI7UkTfenvtgZF3AkFPp64H/2fMB4riww=
 			</data>
 		</dict>
 		<key>Headers/KochavaMeasurement.h</key>
@@ -85,88 +85,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h96NtbR+sfwL9sSS16iDcJ9Pygw=
+			wUJ9WXhwRaVqnJPUF4qLpBKmwLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			u26567xUSl8Nsw9ofKBpU+JHMOWR2tQIynvFk5Ds9BY=
+			uMqZlKL2KW/TZYIUk2X9snd38eVmzC7XSzpZ03BOad8=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/zCeC8sKG+Ls6eFfn7oOo0OZsrk=
+			UsGvaV3sUL23J7cuulCkyQNlBQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			o4K0CPOoigm/LQ06H2GNgBnNHlhU7h+RwzU1JncAaP0=
+			g0gGT/T/mXk50bylJ1ZdHhGX0SNvjJQ2JCJgaUarRio=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8PFepyIr5CdjnB+pk++GjiP4nj4=
+			KZx0iLwsxxHg4TabZ/1+Cv+hFvE=
 			</data>
 			<key>hash2</key>
 			<data>
-			emyt9QR68He94U/LYLty6orKGLMTTsCsrKnKtnkK9nI=
+			gyjmG2VuFubNMr6hFyHDKRX/SRMilwrs4psL5hV9Frk=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/zCeC8sKG+Ls6eFfn7oOo0OZsrk=
+			UsGvaV3sUL23J7cuulCkyQNlBQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			o4K0CPOoigm/LQ06H2GNgBnNHlhU7h+RwzU1JncAaP0=
+			g0gGT/T/mXk50bylJ1ZdHhGX0SNvjJQ2JCJgaUarRio=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h96NtbR+sfwL9sSS16iDcJ9Pygw=
+			wUJ9WXhwRaVqnJPUF4qLpBKmwLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			u26567xUSl8Nsw9ofKBpU+JHMOWR2tQIynvFk5Ds9BY=
+			uMqZlKL2KW/TZYIUk2X9snd38eVmzC7XSzpZ03BOad8=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+3EDL/NicYWv8OWBFzoyOCyFL8A=
+			da1Dr50TEK+q/LsIBTrbO+xqFIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			XoS+qFQZEIDwmfabopr/uenW7lLqPo/j1t+CktlAdvg=
+			VQ+jXQ2dDl6k3dXATmFn/GR0CaPIIYWopn0e7/mdVVY=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nL5Pq2g8YClQ8XfAFDqTZwYQKu8=
+			3hrgZlXIytECPyZnQxPwV5WQXM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vq0EjIoiTXHNECpztPsqPlu8vRXdwi1WMbeESEdAJAA=
+			4MaqwcRjCs8xfBDjcaflERzb0GYiU3lLRLxWZovRaBQ=
 			</data>
 		</dict>
 		<key>Modules/KochavaMeasurement.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+3EDL/NicYWv8OWBFzoyOCyFL8A=
+			da1Dr50TEK+q/LsIBTrbO+xqFIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			XoS+qFQZEIDwmfabopr/uenW7lLqPo/j1t+CktlAdvg=
+			VQ+jXQ2dDl6k3dXATmFn/GR0CaPIIYWopn0e7/mdVVY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

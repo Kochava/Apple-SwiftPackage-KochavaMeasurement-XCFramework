@@ -1,5 +1,5 @@
-What's New in Version 10.1.0:
-• On dual-stack networks, the SDK can now capture additional IP information to help improve attribution matching for conversions originating on IPv6 connections. Actual impact may vary depending on network conditions and publisher configuration.
+What's New in Version 11.0.0:
+• Processing a deeplink now requires a new `eventAutoSendBool` parameter, letting you choose whether the SDK automatically sends a `_Deeplink` event when a deeplink is processed. Review the [Upgrading the SDK documentation](https://support.kochava.com/articles/apple-sdk/) for more details before updating.
 • Miscellaneous improvements to performance and stability
 
 Built on: Xcode 26.1.1
